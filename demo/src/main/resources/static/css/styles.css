@@ -1,0 +1,20 @@
+.illuWindow{
+    position: absolute;
+    left: 550px;
+    display: block;
+    width: 500px;
+    height: 500px;
+}
+.illuWindow canvas{
+    padding: 10px;
+    border-radius: 100px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+}
+nav{
+    position: flex;
+    display: block;
+    width: 500px;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<html lang="en"></html>
+	<title>Contact Info</title>
+	<link rel="stylesheet" href="/css/styles.css">
+	<script type="importmap">
+		{
+		  "imports": {
+			"three": "https://cdn.jsdelivr.net/npm/three@0.146.0/build/three.module.js",
+			"three/addons/": "https://cdn.jsdelivr.net/npm/three@0.146.0/examples/jsm/"
+			}
+		}
+	  </script>
+</head>
+<body>
+
+	<div class="illuWindow">
+		<canvas id="illu"> canvas here
+		</canvas>
+	</div>
+	
+	<nav>
+		<h1>Statistical Calculators</h1>
+		<button id="mean" onclick="myMean()">Mean</button>
+		<button id="count" onclick="myCount()">Count</button>
+		<button id="variance" onclick="myVariance()">Variance</button>
+		<button id="squaredDeviation" onclick="mySquaredDeviation()">Squared Deviation</button>
+		<button id="sumSquaredDeviation" onclick="mySumSquaredDeviation()">Sum of Squared Deviation</button>
+		<button id="standardDeviation" onclick="myStandardDeviation()">Standard Deviation</button>
+		<button id="sqrtN" onclick="mySqrtN()">Square Root of N</button>
+		<button id="SEM" onclick="mySEM()">Standard Error of the Mean (SEM)</button>
+	
+	</nav>
+
+	<div id="meanContainer">
+		<h4>Mean Output</h4>
+        <p id="meanOutput"></p>
+	</div>
+
+	<div id="countContainer">
+		<h4>Count Output</h4>
+        <p id="countOutput"></p>
+	</div>
+
+	<div id="varianceContainer">
+		<h4>Variance Output</h4>
+        <p id="varianceOutput"></p>
+	</div>
+
+	<div id="squaredDevationContainer">
+		<h4>Squared Deviation Output</h4>
+        <p id="squaredDeviationOutput"></p>
+	</div>
+
+	<div id="sumSquaredDevationContainer">
+		<h4>Sum of Squared Deviation Output</h4>
+        <p id="sumSquaredDeviationOutput"></p>
+	</div>
+
+	<div id="StandardDevationContainer">
+		<h4>Standard Deviation Output</h4>
+        <p id="StandardDeviationOutput"></p>
+	</div>
+	
+	<div id="SqrtNContainer">
+		<h4>Square Root of N Output</h4>
+        <p id="SqrtNOutput"></p>
+	</div>
+
+	<div id="SEMContainer">
+		<h4>Standard Error of the Mean Output</h4>
+        <p id="SEMOutput"></p>
+	</div>
+
+	<script src="calculations.js"></script>
+	<script type="module" src="script1.js"></script>
+	<script type="module" src="staticgraph.js"></script>
+</body>
+</html>
